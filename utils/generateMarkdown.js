@@ -40,12 +40,12 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== '') {
+  if (license !== 'None') {
     tableLicense = '- [License](#license)';
     sectionLicense = `
-    ## License
-    This project is covered by the ${data.license} license
-    ${link}`
+## License
+This project is covered by the ${license} license.    
+${link}`
   }
 }
 
@@ -53,7 +53,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   renderLicenseBadge(data.license);
   renderLicenseLink(data.license);
-  // renderLicenseSection(data.license);
+  renderLicenseSection(data.license);
   return `
 # ${data.title}
 
@@ -62,6 +62,31 @@ ${badge}
 ## Description
 ${data.description}
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+${tableLicense}
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.install}
+
+## Usage
+${data.usage}
+
+${sectionLicense}
+
+## Contributing
+${data.contribution}
+
+## Tests
+${data.testing}
+
+## Questions
+Any questions you can reach me at ${data.email}.    
+You can view more of my projects at http://github.com/${data.github}.
 
 `;
 }
