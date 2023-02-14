@@ -12,6 +12,7 @@ This project uses NodeJS and Inquirer to create a ReadMe file
 # Links
 [Code Repository](https://github.com/Justin-Brueske/the-readme-generator)
 
+[Video](https://drive.google.com/file/d/1LRN_2xHkalEviKLhM5yEtwSlnEPY5Tht/view)
 
 # Insatllation
 You need to have NodeJS installed
