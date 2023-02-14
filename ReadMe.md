@@ -12,7 +12,6 @@ This project uses NodeJS and Inquirer to create a ReadMe file
 # Links
 [Code Repository](https://github.com/Justin-Brueske/the-readme-generator)
 
-[Video](https://justin-brueske.github.io/open-weather-dashboard/)
 
 # Insatllation
 You need to have NodeJS installed
